@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           NIOWebSocket Docs
         </a>
-         (85% documented)
+         (86% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -39,6 +39,12 @@
           </a>
         </p>
     
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fapple%2Egithub%2Eio%2Fswift%2Dnio%2Fdocs%2F2%2E0%2E0%2Fdocsets%2FNIOWebSocket%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
     </header>
 
     <p class="breadcrumbs">
@@ -74,13 +80,7 @@
                 <a class="nav-group-task-link" href="../Enums/NIOWebSocketError.html">NIOWebSocketError</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/NIOWebSocketUpgradeError.html">NIOWebSocketUpgradeError</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/WebSocketErrorCode.html">WebSocketErrorCode</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/WebSocketOpcode.html">WebSocketOpcode</a>
               </li>
             </ul>
           </li>
@@ -89,6 +89,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/ByteBuffer.html">ByteBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Int.html">Int</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UInt16.html">UInt16</a>
@@ -102,10 +105,16 @@
             <a class="nav-group-name-link" href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NIOWebSocketUpgradeError.html">NIOWebSocketUpgradeError</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/WebSocketFrame.html">WebSocketFrame</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/WebSocketMaskingKey.html">WebSocketMaskingKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WebSocketOpcode.html">WebSocketOpcode</a>
               </li>
             </ul>
           </li>
@@ -139,9 +148,9 @@ around a four-tuple.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12NIOWebSocket03WebB10MaskingKeyVACSgxcs10CollectionRzs5UInt8V7ElementRtzlufc"></a>
+                    <a name="/s:12NIOWebSocket03WebB10MaskingKeyVyACSgxcSlRzs5UInt8V7ElementRtzlufc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12NIOWebSocket03WebB10MaskingKeyVACSgxcs10CollectionRzs5UInt8V7ElementRtzlufc">init(_:)</a>
+                    <a class="token" href="#/s:12NIOWebSocket03WebB10MaskingKeyVyACSgxcSlRzs5UInt8V7ElementRtzlufc">init(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -156,7 +165,7 @@ around a four-tuple.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">init</span><span class="p">?</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">buffer</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Collection</span><span class="p">,</span> <span class="kt">T</span><span class="o">.</span><span class="kt">Element</span> <span class="o">==</span> <span class="kt">UInt8</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">init</span><span class="p">?</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">buffer</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Collection</span><span class="p">,</span> <span class="kt">T</span><span class="o">.</span><span class="kt"><a href="../Structs/WebSocketMaskingKey.html#/s:ST7ElementQa">Element</a></span> <span class="o">==</span> <span class="kt">UInt8</span></code></pre>
 
                         </div>
                       </div>
@@ -170,9 +179,35 @@ around a four-tuple.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s25ExpressibleByArrayLiteralPxSay0cD7ElementQzG05arrayD0d_tcfc"></a>
+                    <a name="/s:s25ExpressibleByArrayLiteralP0cD7ElementQa"></a>
+                    <a name="//apple_ref/swift/Alias/ArrayLiteralElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s25ExpressibleByArrayLiteralP0cD7ElementQa">ArrayLiteralElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">ArrayLiteralElement</span> <span class="o">=</span> <span class="kt">UInt8</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s25ExpressibleByArrayLiteralP05arrayD0x0cD7ElementQzd_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(arrayLiteral:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s25ExpressibleByArrayLiteralPxSay0cD7ElementQzG05arrayD0d_tcfc">init(arrayLiteral:)</a>
+                    <a class="token" href="#/s:s25ExpressibleByArrayLiteralP05arrayD0x0cD7ElementQzd_tcfc">init(arrayLiteral:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -200,9 +235,9 @@ around a four-tuple.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s9EquatableP2eeoiSbx_xtFZ"></a>
+                    <a name="/s:SQ2eeoiySbx_xtFZ"></a>
                     <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s9EquatableP2eeoiSbx_xtFZ">==(_:_:)</a>
+                    <a class="token" href="#/s:SQ2eeoiySbx_xtFZ">==(_:_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -216,7 +251,7 @@ around a four-tuple.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">WebSocketMaskingKey</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">WebSocketMaskingKey</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">WebSocketMaskingKey</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">WebSocketMaskingKey</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -230,9 +265,61 @@ around a four-tuple.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s14_IndexableBaseP10startIndex0D0Qzv"></a>
+                    <a name="/s:ST7ElementQa"></a>
+                    <a name="//apple_ref/swift/Alias/Element" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ST7ElementQa">Element</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Element</span> <span class="o">=</span> <span class="kt">UInt8</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl5IndexQa"></a>
+                    <a name="//apple_ref/swift/Alias/Index" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl5IndexQa">Index</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Index</span> <span class="o">=</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl10startIndex0B0Qzvp"></a>
                     <a name="//apple_ref/swift/Property/startIndex" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s14_IndexableBaseP10startIndex0D0Qzv">startIndex</a>
+                    <a class="token" href="#/s:Sl10startIndex0B0Qzvp">startIndex</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -256,9 +343,9 @@ around a four-tuple.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s14_IndexableBaseP8endIndex0D0Qzv"></a>
+                    <a name="/s:Sl8endIndex0B0Qzvp"></a>
                     <a name="//apple_ref/swift/Property/endIndex" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s14_IndexableBaseP8endIndex0D0Qzv">endIndex</a>
+                    <a class="token" href="#/s:Sl8endIndex0B0Qzvp">endIndex</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -282,9 +369,9 @@ around a four-tuple.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s14_IndexableBaseP5index5IndexQzAE5after_tF"></a>
+                    <a name="/s:Sl5index5after5IndexQzAD_tF"></a>
                     <a name="//apple_ref/swift/Method/index(after:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s14_IndexableBaseP5index5IndexQzAE5after_tF">index(after:)</a>
+                    <a class="token" href="#/s:Sl5index5after5IndexQzAD_tF">index(after:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -305,6 +392,32 @@ around a four-tuple.</p>
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sly7ElementQz5IndexQzcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sly7ElementQz5IndexQzcip">subscript(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UInt8</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -313,8 +426,8 @@ around a four-tuple.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://github.com/apple/swift-nio" target="_blank" rel="external">SwiftNIO Team</a>. All rights reserved. (Last updated: 2019-03-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2019 <a class="link" href="https://github.com/apple/swift-nio" target="_blank" rel="external">SwiftNIO Team</a>. All rights reserved. (Last updated: 2019-03-26)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

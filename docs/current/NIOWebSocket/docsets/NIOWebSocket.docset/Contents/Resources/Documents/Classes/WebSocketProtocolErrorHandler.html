@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           NIOWebSocket Docs
         </a>
-         (85% documented)
+         (86% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -39,6 +39,12 @@
           </a>
         </p>
     
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fapple%2Egithub%2Eio%2Fswift%2Dnio%2Fdocs%2F2%2E0%2E0%2Fdocsets%2FNIOWebSocket%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
     </header>
 
     <p class="breadcrumbs">
@@ -74,13 +80,7 @@
                 <a class="nav-group-task-link" href="../Enums/NIOWebSocketError.html">NIOWebSocketError</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/NIOWebSocketUpgradeError.html">NIOWebSocketUpgradeError</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/WebSocketErrorCode.html">WebSocketErrorCode</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/WebSocketOpcode.html">WebSocketOpcode</a>
               </li>
             </ul>
           </li>
@@ -89,6 +89,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/ByteBuffer.html">ByteBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Int.html">Int</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UInt16.html">UInt16</a>
@@ -102,10 +105,16 @@
             <a class="nav-group-name-link" href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NIOWebSocketUpgradeError.html">NIOWebSocketUpgradeError</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/WebSocketFrame.html">WebSocketFrame</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/WebSocketMaskingKey.html">WebSocketMaskingKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WebSocketOpcode.html">WebSocketOpcode</a>
               </li>
             </ul>
           </li>
@@ -138,6 +147,58 @@ WebSocket protocol, and can be used by users when custom behaviour is not requir
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:3NIO21ChannelInboundHandlerP0C2InQa"></a>
+                    <a name="//apple_ref/swift/Alias/InboundIn" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3NIO21ChannelInboundHandlerP0C2InQa">InboundIn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">InboundIn</span> <span class="o">=</span> <span class="kt">Never</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3NIO23_EmittingChannelHandlerP11OutboundOutQa"></a>
+                    <a name="//apple_ref/swift/Alias/OutboundOut" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3NIO23_EmittingChannelHandlerP11OutboundOutQa">OutboundOut</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">OutboundOut</span> <span class="o">=</span> <span class="kt"><a href="../Structs/WebSocketFrame.html">WebSocketFrame</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:12NIOWebSocket03WebB20ProtocolErrorHandlerCACycfc"></a>
                     <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
                     <a class="token" href="#/s:12NIOWebSocket03WebB20ProtocolErrorHandlerCACycfc">init()</a>
@@ -165,9 +226,9 @@ WebSocket protocol, and can be used by users when custom behaviour is not requir
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3NIO22_ChannelInboundHandlerP11errorCaughtyAA0bD7ContextC3ctx_s5Error_p0E0tF"></a>
-                    <a name="//apple_ref/swift/Method/errorCaught(ctx:error:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3NIO22_ChannelInboundHandlerP11errorCaughtyAA0bD7ContextC3ctx_s5Error_p0E0tF">errorCaught(ctx:error:)</a>
+                    <a name="/s:3NIO22_ChannelInboundHandlerP11errorCaught7context0E0yAA0bD7ContextC_s5Error_ptF"></a>
+                    <a name="//apple_ref/swift/Method/errorCaught(context:error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3NIO22_ChannelInboundHandlerP11errorCaught7context0E0yAA0bD7ContextC_s5Error_ptF">errorCaught(context:error:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -181,7 +242,7 @@ WebSocket protocol, and can be used by users when custom behaviour is not requir
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">errorCaught</span><span class="p">(</span><span class="nv">ctx</span><span class="p">:</span> <span class="kt">ChannelHandlerContext</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">errorCaught</span><span class="p">(</span><span class="nv">context</span><span class="p">:</span> <span class="kt">ChannelHandlerContext</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -196,8 +257,8 @@ WebSocket protocol, and can be used by users when custom behaviour is not requir
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://github.com/apple/swift-nio" target="_blank" rel="external">SwiftNIO Team</a>. All rights reserved. (Last updated: 2019-03-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2019 <a class="link" href="https://github.com/apple/swift-nio" target="_blank" rel="external">SwiftNIO Team</a>. All rights reserved. (Last updated: 2019-03-26)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
