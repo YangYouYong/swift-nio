@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           NIOTLS Docs
         </a>
-         (68% documented)
+         (83% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -39,12 +39,6 @@
           </a>
         </p>
     
-        <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fapple%2Egithub%2Eio%2Fswift%2Dnio%2Fdocs%2F2%2E0%2E0%2Fdocsets%2FNIOTLS%2Exml">
-            <img class="header-icon" src="../img/dash.png"/>
-            Install in Dash
-          </a>
-        </p>
     </header>
 
     <p class="breadcrumbs">
@@ -63,7 +57,7 @@
                 <a class="nav-group-task-link" href="../Classes/ApplicationProtocolNegotiationHandler.html">ApplicationProtocolNegotiationHandler</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/SNIHandler.html">SNIHandler</a>
+                <a class="nav-group-task-link" href="../Classes/SniHandler.html">SniHandler</a>
               </li>
             </ul>
           </li>
@@ -74,7 +68,7 @@
                 <a class="nav-group-task-link" href="../Enums/ALPNResult.html">ALPNResult</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/SNIResult.html">SNIResult</a>
+                <a class="nav-group-task-link" href="../Enums/SniResult.html">SniResult</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/TLSUserEvent.html">TLSUserEvent</a>
@@ -90,7 +84,7 @@
             <h1>ApplicationProtocolNegotiationHandler</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">ApplicationProtocolNegotiationHandler</span> <span class="p">:</span> <span class="kt">ChannelInboundHandler</span><span class="p">,</span> <span class="kt">RemovableChannelHandler</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ApplicationProtocolNegotiationHandler</span> <span class="p">:</span> <span class="kt">ChannelInboundHandler</span></code></pre>
 
                 </div>
               </div>
@@ -225,9 +219,9 @@ negotiation has completed.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3NIO22_ChannelInboundHandlerP04userC14EventTriggered7context5eventyAA0bD7ContextC_yptF"></a>
-                    <a name="//apple_ref/swift/Method/userInboundEventTriggered(context:event:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3NIO22_ChannelInboundHandlerP04userC14EventTriggered7context5eventyAA0bD7ContextC_yptF">userInboundEventTriggered(context:event:)</a>
+                    <a name="/s:3NIO22_ChannelInboundHandlerP04userC14EventTriggered3ctx5eventyAA0bD7ContextC_yptF"></a>
+                    <a name="//apple_ref/swift/Method/userInboundEventTriggered(ctx:event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3NIO22_ChannelInboundHandlerP04userC14EventTriggered3ctx5eventyAA0bD7ContextC_yptF">userInboundEventTriggered(ctx:event:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -241,7 +235,7 @@ negotiation has completed.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">userInboundEventTriggered</span><span class="p">(</span><span class="nv">context</span><span class="p">:</span> <span class="kt">ChannelHandlerContext</span><span class="p">,</span> <span class="nv">event</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">userInboundEventTriggered</span><span class="p">(</span><span class="nv">ctx</span><span class="p">:</span> <span class="kt">ChannelHandlerContext</span><span class="p">,</span> <span class="nv">event</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -251,9 +245,9 @@ negotiation has completed.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3NIO22_ChannelInboundHandlerP11channelRead7context4datayAA0bD7ContextC_AA6NIOAnyVtF"></a>
-                    <a name="//apple_ref/swift/Method/channelRead(context:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3NIO22_ChannelInboundHandlerP11channelRead7context4datayAA0bD7ContextC_AA6NIOAnyVtF">channelRead(context:data:)</a>
+                    <a name="/s:3NIO22_ChannelInboundHandlerP11channelRead3ctx4datayAA0bD7ContextC_AA6NIOAnyVtF"></a>
+                    <a name="//apple_ref/swift/Method/channelRead(ctx:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3NIO22_ChannelInboundHandlerP11channelRead3ctx4datayAA0bD7ContextC_AA6NIOAnyVtF">channelRead(ctx:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -267,7 +261,7 @@ negotiation has completed.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">channelRead</span><span class="p">(</span><span class="nv">context</span><span class="p">:</span> <span class="kt">ChannelHandlerContext</span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">NIOAny</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">channelRead</span><span class="p">(</span><span class="nv">ctx</span><span class="p">:</span> <span class="kt">ChannelHandlerContext</span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">NIOAny</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -282,7 +276,7 @@ negotiation has completed.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://github.com/apple/swift-nio" target="_blank" rel="external">SwiftNIO Team</a>. All rights reserved. (Last updated: 2019-03-26)</p>
+      <p>&copy; 2019 <a class="link" href="https://github.com/apple/swift-nio" target="_blank" rel="external">SwiftNIO Team</a>. All rights reserved. (Last updated: 2019-04-10)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

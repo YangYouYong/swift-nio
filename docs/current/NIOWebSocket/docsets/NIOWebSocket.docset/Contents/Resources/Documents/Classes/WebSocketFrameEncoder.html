@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           NIOWebSocket Docs
         </a>
-         (86% documented)
+         (87% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -39,12 +39,6 @@
           </a>
         </p>
     
-        <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fapple%2Egithub%2Eio%2Fswift%2Dnio%2Fdocs%2F2%2E0%2E0%2Fdocsets%2FNIOWebSocket%2Exml">
-            <img class="header-icon" src="../img/dash.png"/>
-            Install in Dash
-          </a>
-        </p>
     </header>
 
     <p class="breadcrumbs">
@@ -80,7 +74,13 @@
                 <a class="nav-group-task-link" href="../Enums/NIOWebSocketError.html">NIOWebSocketError</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NIOWebSocketUpgradeError.html">NIOWebSocketUpgradeError</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/WebSocketErrorCode.html">WebSocketErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/WebSocketOpcode.html">WebSocketOpcode</a>
               </li>
             </ul>
           </li>
@@ -89,9 +89,6 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/ByteBuffer.html">ByteBuffer</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Int.html">Int</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UInt16.html">UInt16</a>
@@ -105,16 +102,10 @@
             <a class="nav-group-name-link" href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/NIOWebSocketUpgradeError.html">NIOWebSocketUpgradeError</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/WebSocketFrame.html">WebSocketFrame</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/WebSocketMaskingKey.html">WebSocketMaskingKey</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/WebSocketOpcode.html">WebSocketOpcode</a>
               </li>
             </ul>
           </li>
@@ -232,9 +223,9 @@ frame transformation as needed.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3NIO23_ChannelOutboundHandlerP5write7context4data7promiseyAA0bD7ContextC_AA6NIOAnyVAA16EventLoopPromiseVyytGSgtF"></a>
-                    <a name="//apple_ref/swift/Method/write(context:data:promise:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3NIO23_ChannelOutboundHandlerP5write7context4data7promiseyAA0bD7ContextC_AA6NIOAnyVAA16EventLoopPromiseVyytGSgtF">write(context:data:promise:)</a>
+                    <a name="/s:3NIO23_ChannelOutboundHandlerP5write3ctx4data7promiseyAA0bD7ContextC_AA6NIOAnyVAA16EventLoopPromiseVyytGSgtF"></a>
+                    <a name="//apple_ref/swift/Method/write(ctx:data:promise:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3NIO23_ChannelOutboundHandlerP5write3ctx4data7promiseyAA0bD7ContextC_AA6NIOAnyVAA16EventLoopPromiseVyytGSgtF">write(ctx:data:promise:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -248,7 +239,7 @@ frame transformation as needed.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">write</span><span class="p">(</span><span class="nv">context</span><span class="p">:</span> <span class="kt">ChannelHandlerContext</span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">NIOAny</span><span class="p">,</span> <span class="nv">promise</span><span class="p">:</span> <span class="kt">EventLoopPromise</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span><span class="p">?)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">write</span><span class="p">(</span><span class="nv">ctx</span><span class="p">:</span> <span class="kt">ChannelHandlerContext</span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">NIOAny</span><span class="p">,</span> <span class="nv">promise</span><span class="p">:</span> <span class="kt">EventLoopPromise</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>
@@ -263,7 +254,7 @@ frame transformation as needed.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://github.com/apple/swift-nio" target="_blank" rel="external">SwiftNIO Team</a>. All rights reserved. (Last updated: 2019-03-26)</p>
+      <p>&copy; 2019 <a class="link" href="https://github.com/apple/swift-nio" target="_blank" rel="external">SwiftNIO Team</a>. All rights reserved. (Last updated: 2019-04-10)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
