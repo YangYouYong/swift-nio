@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           NIOWebSocket Docs
         </a>
-         (87% documented)
+         (86% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -39,6 +39,12 @@
           </a>
         </p>
     
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fapple%2Egithub%2Eio%2Fswift%2Dnio%2Fdocs%2F2%2E0%2E1%2Fdocsets%2FNIOWebSocket%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
     </header>
 
     <p class="breadcrumbs">
@@ -74,13 +80,7 @@
                 <a class="nav-group-task-link" href="../Enums/NIOWebSocketError.html">NIOWebSocketError</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/NIOWebSocketUpgradeError.html">NIOWebSocketUpgradeError</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/WebSocketErrorCode.html">WebSocketErrorCode</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/WebSocketOpcode.html">WebSocketOpcode</a>
               </li>
             </ul>
           </li>
@@ -89,6 +89,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/ByteBuffer.html">ByteBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Int.html">Int</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UInt16.html">UInt16</a>
@@ -102,10 +105,16 @@
             <a class="nav-group-name-link" href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NIOWebSocketUpgradeError.html">NIOWebSocketUpgradeError</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/WebSocketFrame.html">WebSocketFrame</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/WebSocketMaskingKey.html">WebSocketMaskingKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WebSocketOpcode.html">WebSocketOpcode</a>
               </li>
             </ul>
           </li>
@@ -118,11 +127,11 @@
             <h1>WebSocketUpgrader</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">WebSocketUpgrader</span> <span class="p">:</span> <span class="kt">HTTPProtocolUpgrader</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">WebSocketUpgrader</span> <span class="p">:</span> <span class="kt">HTTPServerProtocolUpgrader</span></code></pre>
 
                 </div>
               </div>
-            <p>A <code>HTTPProtocolUpgrader</code> that knows how to do the WebSocket upgrade dance.</p>
+            <p>A <code>HTTPServerProtocolUpgrader</code> that knows how to do the WebSocket upgrade dance.</p>
 
 <p>Users may frequently want to offer multiple websocket endpoints on the same port. For this
 reason, this <code>WebSocketUpgrader</code> only knows how to do the required parts of the upgrade and to
@@ -199,9 +208,9 @@ which NIO requires. We check for these manually.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12NIOWebSocket03WebB8UpgraderC22automaticErrorHandling13shouldUpgrade22upgradePipelineHandlerACSb_8NIOHTTP111HTTPHeadersVSgAG15HTTPRequestHeadVc3NIO15EventLoopFutureCyytGAM7Channel_p_ALtctcfc"></a>
+                    <a name="/s:12NIOWebSocket03WebB8UpgraderC22automaticErrorHandling13shouldUpgrade22upgradePipelineHandlerACSb_3NIO15EventLoopFutureCy8NIOHTTP111HTTPHeadersVSgGAG7Channel_p_AJ15HTTPRequestHeadVtcAIyytGAgO_p_AQtctcfc"></a>
                     <a name="//apple_ref/swift/Method/init(automaticErrorHandling:shouldUpgrade:upgradePipelineHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12NIOWebSocket03WebB8UpgraderC22automaticErrorHandling13shouldUpgrade22upgradePipelineHandlerACSb_8NIOHTTP111HTTPHeadersVSgAG15HTTPRequestHeadVc3NIO15EventLoopFutureCyytGAM7Channel_p_ALtctcfc">init(automaticErrorHandling:shouldUpgrade:upgradePipelineHandler:)</a>
+                    <a class="token" href="#/s:12NIOWebSocket03WebB8UpgraderC22automaticErrorHandling13shouldUpgrade22upgradePipelineHandlerACSb_3NIO15EventLoopFutureCy8NIOHTTP111HTTPHeadersVSgGAG7Channel_p_AJ15HTTPRequestHeadVtcAIyytGAgO_p_AQtctcfc">init(automaticErrorHandling:shouldUpgrade:upgradePipelineHandler:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -216,7 +225,7 @@ which NIO requires. We check for these manually.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">automaticErrorHandling</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">shouldUpgrade</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">HTTPRequestHead</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">HTTPHeaders</span><span class="p">?,</span>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">automaticErrorHandling</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">shouldUpgrade</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Channel</span><span class="p">,</span> <span class="kt">HTTPRequestHead</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">HTTPHeaders</span><span class="p">?</span><span class="o">&gt;</span><span class="p">,</span>
             <span class="nv">upgradePipelineHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Channel</span><span class="p">,</span> <span class="kt">HTTPRequestHead</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -251,7 +260,7 @@ may be set to <code>false</code> if the user wishes to handle their own errors.<
 upgraded. This callback is responsible for creating a <code>HTTPHeaders</code> object with
 any headers that it needs on the response <em>except for</em> the <code>Upgrade</code>, <code>Connection</code>,
 and <code>Sec-WebSocket-Accept</code> headers, which this upgrader will handle. Should return
-<code>nil</code> if the upgrade should be refused.</p>
+an <code>EventLoopFuture</code> containing <code>nil</code> if the upgrade should be refused.</p>
                                 </div>
                               </td>
                             </tr>
@@ -280,9 +289,9 @@ pipeline automatically.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12NIOWebSocket03WebB8UpgraderC12maxFrameSize22automaticErrorHandling13shouldUpgrade22upgradePipelineHandlerACSi_Sb8NIOHTTP111HTTPHeadersVSgAH15HTTPRequestHeadVc3NIO15EventLoopFutureCyytGAN7Channel_p_AMtctcfc"></a>
+                    <a name="/s:12NIOWebSocket03WebB8UpgraderC12maxFrameSize22automaticErrorHandling13shouldUpgrade22upgradePipelineHandlerACSi_Sb3NIO15EventLoopFutureCy8NIOHTTP111HTTPHeadersVSgGAH7Channel_p_AK15HTTPRequestHeadVtcAJyytGAhP_p_ARtctcfc"></a>
                     <a name="//apple_ref/swift/Method/init(maxFrameSize:automaticErrorHandling:shouldUpgrade:upgradePipelineHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12NIOWebSocket03WebB8UpgraderC12maxFrameSize22automaticErrorHandling13shouldUpgrade22upgradePipelineHandlerACSi_Sb8NIOHTTP111HTTPHeadersVSgAH15HTTPRequestHeadVc3NIO15EventLoopFutureCyytGAN7Channel_p_AMtctcfc">init(maxFrameSize:automaticErrorHandling:shouldUpgrade:upgradePipelineHandler:)</a>
+                    <a class="token" href="#/s:12NIOWebSocket03WebB8UpgraderC12maxFrameSize22automaticErrorHandling13shouldUpgrade22upgradePipelineHandlerACSi_Sb3NIO15EventLoopFutureCy8NIOHTTP111HTTPHeadersVSgGAH7Channel_p_AK15HTTPRequestHeadVtcAJyytGAhP_p_ARtctcfc">init(maxFrameSize:automaticErrorHandling:shouldUpgrade:upgradePipelineHandler:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -297,7 +306,7 @@ pipeline automatically.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">maxFrameSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">automaticErrorHandling</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">shouldUpgrade</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">HTTPRequestHead</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">HTTPHeaders</span><span class="p">?,</span>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">maxFrameSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">automaticErrorHandling</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">shouldUpgrade</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Channel</span><span class="p">,</span> <span class="kt">HTTPRequestHead</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">HTTPHeaders</span><span class="p">?</span><span class="o">&gt;</span><span class="p">,</span>
             <span class="nv">upgradePipelineHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Channel</span><span class="p">,</span> <span class="kt">HTTPRequestHead</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -347,7 +356,7 @@ may be set to <code>false</code> if the user wishes to handle their own errors.<
 upgraded. This callback is responsible for creating a <code>HTTPHeaders</code> object with
 any headers that it needs on the response <em>except for</em> the <code>Upgrade</code>, <code>Connection</code>,
 and <code>Sec-WebSocket-Accept</code> headers, which this upgrader will handle. Should return
-<code>nil</code> if the upgrade should be refused.</p>
+an <code>EventLoopFuture</code> containing <code>nil</code> if the upgrade should be refused.</p>
                                 </div>
                               </td>
                             </tr>
@@ -376,9 +385,9 @@ pipeline automatically.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8NIOHTTP120HTTPProtocolUpgraderP20buildUpgradeResponse14upgradeRequest07initialF7HeadersAA11HTTPHeadersVAA15HTTPRequestHeadV_AHtKF"></a>
-                    <a name="//apple_ref/swift/Method/buildUpgradeResponse(upgradeRequest:initialResponseHeaders:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8NIOHTTP120HTTPProtocolUpgraderP20buildUpgradeResponse14upgradeRequest07initialF7HeadersAA11HTTPHeadersVAA15HTTPRequestHeadV_AHtKF">buildUpgradeResponse(upgradeRequest:initialResponseHeaders:)</a>
+                    <a name="/s:8NIOHTTP126HTTPServerProtocolUpgraderP20buildUpgradeResponse7channel14upgradeRequest07initialG7Headers3NIO15EventLoopFutureCyAA11HTTPHeadersVGAH7Channel_p_AA15HTTPRequestHeadVALtF"></a>
+                    <a name="//apple_ref/swift/Method/buildUpgradeResponse(channel:upgradeRequest:initialResponseHeaders:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8NIOHTTP126HTTPServerProtocolUpgraderP20buildUpgradeResponse7channel14upgradeRequest07initialG7Headers3NIO15EventLoopFutureCyAA11HTTPHeadersVGAH7Channel_p_AA15HTTPRequestHeadVALtF">buildUpgradeResponse(channel:upgradeRequest:initialResponseHeaders:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -392,7 +401,7 @@ pipeline automatically.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">buildUpgradeResponse</span><span class="p">(</span><span class="nv">upgradeRequest</span><span class="p">:</span> <span class="kt">HTTPRequestHead</span><span class="p">,</span> <span class="nv">initialResponseHeaders</span><span class="p">:</span> <span class="kt">HTTPHeaders</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">HTTPHeaders</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">buildUpgradeResponse</span><span class="p">(</span><span class="nv">channel</span><span class="p">:</span> <span class="kt">Channel</span><span class="p">,</span> <span class="nv">upgradeRequest</span><span class="p">:</span> <span class="kt">HTTPRequestHead</span><span class="p">,</span> <span class="nv">initialResponseHeaders</span><span class="p">:</span> <span class="kt">HTTPHeaders</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">HTTPHeaders</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -402,9 +411,9 @@ pipeline automatically.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8NIOHTTP120HTTPProtocolUpgraderP7upgrade3ctx0D7Request3NIO15EventLoopFutureCyytGAG21ChannelHandlerContextC_AA15HTTPRequestHeadVtF"></a>
-                    <a name="//apple_ref/swift/Method/upgrade(ctx:upgradeRequest:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8NIOHTTP120HTTPProtocolUpgraderP7upgrade3ctx0D7Request3NIO15EventLoopFutureCyytGAG21ChannelHandlerContextC_AA15HTTPRequestHeadVtF">upgrade(ctx:upgradeRequest:)</a>
+                    <a name="/s:8NIOHTTP126HTTPServerProtocolUpgraderP7upgrade7context0E7Request3NIO15EventLoopFutureCyytGAG21ChannelHandlerContextC_AA15HTTPRequestHeadVtF"></a>
+                    <a name="//apple_ref/swift/Method/upgrade(context:upgradeRequest:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8NIOHTTP126HTTPServerProtocolUpgraderP7upgrade7context0E7Request3NIO15EventLoopFutureCyytGAG21ChannelHandlerContextC_AA15HTTPRequestHeadVtF">upgrade(context:upgradeRequest:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -418,7 +427,7 @@ pipeline automatically.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">upgrade</span><span class="p">(</span><span class="nv">ctx</span><span class="p">:</span> <span class="kt">ChannelHandlerContext</span><span class="p">,</span> <span class="nv">upgradeRequest</span><span class="p">:</span> <span class="kt">HTTPRequestHead</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">upgrade</span><span class="p">(</span><span class="nv">context</span><span class="p">:</span> <span class="kt">ChannelHandlerContext</span><span class="p">,</span> <span class="nv">upgradeRequest</span><span class="p">:</span> <span class="kt">HTTPRequestHead</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>

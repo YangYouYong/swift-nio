@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           NIOWebSocket Docs
         </a>
-         (87% documented)
+         (86% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -39,6 +39,12 @@
           </a>
         </p>
     
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fapple%2Egithub%2Eio%2Fswift%2Dnio%2Fdocs%2F2%2E0%2E1%2Fdocsets%2FNIOWebSocket%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
     </header>
 
     <p class="breadcrumbs">
@@ -74,13 +80,7 @@
                 <a class="nav-group-task-link" href="../Enums/NIOWebSocketError.html">NIOWebSocketError</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/NIOWebSocketUpgradeError.html">NIOWebSocketUpgradeError</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/WebSocketErrorCode.html">WebSocketErrorCode</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/WebSocketOpcode.html">WebSocketOpcode</a>
               </li>
             </ul>
           </li>
@@ -89,6 +89,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/ByteBuffer.html">ByteBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Int.html">Int</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UInt16.html">UInt16</a>
@@ -102,10 +105,16 @@
             <a class="nav-group-name-link" href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/NIOWebSocketUpgradeError.html">NIOWebSocketUpgradeError</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/WebSocketFrame.html">WebSocketFrame</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/WebSocketMaskingKey.html">WebSocketMaskingKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WebSocketOpcode.html">WebSocketOpcode</a>
               </li>
             </ul>
           </li>
@@ -244,9 +253,9 @@ a frame is not fragmented at all.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12NIOWebSocket03WebB5FrameV6opcodeAA0cB6OpcodeOvp"></a>
+                    <a name="/s:12NIOWebSocket03WebB5FrameV6opcodeAA0cB6OpcodeVvp"></a>
                     <a name="//apple_ref/swift/Property/opcode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12NIOWebSocket03WebB5FrameV6opcodeAA0cB6OpcodeOvp">opcode</a>
+                    <a class="token" href="#/s:12NIOWebSocket03WebB5FrameV6opcodeAA0cB6OpcodeVvp">opcode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -261,7 +270,7 @@ a frame is not fragmented at all.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">opcode</span><span class="p">:</span> <span class="kt"><a href="../Enums/WebSocketOpcode.html">WebSocketOpcode</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">opcode</span><span class="p">:</span> <span class="kt"><a href="../Structs/WebSocketOpcode.html">WebSocketOpcode</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -505,9 +514,9 @@ manually unmask the data with <code>data.unmask(maskKey)</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12NIOWebSocket03WebB5FrameV3fin4rsv14rsv24rsv36opcode7maskKey4data13extensionDataACSb_S3bAA0cB6OpcodeOAA0cb7MaskingK0VSg3NIO10ByteBufferVASSgtcfc"></a>
+                    <a name="/s:12NIOWebSocket03WebB5FrameV3fin4rsv14rsv24rsv36opcode7maskKey4data13extensionDataACSb_S3bAA0cB6OpcodeVAA0cb7MaskingK0VSg3NIO10ByteBufferVASSgtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(fin:rsv1:rsv2:rsv3:opcode:maskKey:data:extensionData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12NIOWebSocket03WebB5FrameV3fin4rsv14rsv24rsv36opcode7maskKey4data13extensionDataACSb_S3bAA0cB6OpcodeOAA0cb7MaskingK0VSg3NIO10ByteBufferVASSgtcfc">init(fin:rsv1:rsv2:rsv3:opcode:maskKey:data:extensionData:)</a>
+                    <a class="token" href="#/s:12NIOWebSocket03WebB5FrameV3fin4rsv14rsv24rsv36opcode7maskKey4data13extensionDataACSb_S3bAA0cB6OpcodeVAA0cb7MaskingK0VSg3NIO10ByteBufferVASSgtcfc">init(fin:rsv1:rsv2:rsv3:opcode:maskKey:data:extensionData:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -523,7 +532,7 @@ manually unmask the data with <code>data.unmask(maskKey)</code>.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">fin</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">rsv1</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">rsv2</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">rsv3</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
-            <span class="nv">opcode</span><span class="p">:</span> <span class="kt"><a href="../Enums/WebSocketOpcode.html">WebSocketOpcode</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">continuation</span><span class="p">,</span> <span class="nv">maskKey</span><span class="p">:</span> <span class="kt"><a href="../Structs/WebSocketMaskingKey.html">WebSocketMaskingKey</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+            <span class="nv">opcode</span><span class="p">:</span> <span class="kt"><a href="../Structs/WebSocketOpcode.html">WebSocketOpcode</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">continuation</span><span class="p">,</span> <span class="nv">maskKey</span><span class="p">:</span> <span class="kt"><a href="../Structs/WebSocketMaskingKey.html">WebSocketMaskingKey</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
             <span class="nv">data</span><span class="p">:</span> <span class="kt">ByteBuffer</span><span class="p">,</span> <span class="nv">extensionData</span><span class="p">:</span> <span class="kt">ByteBuffer</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -630,36 +639,6 @@ manually unmask the data with <code>data.unmask(maskKey)</code>.</p>
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:SQ2eeoiySbx_xtFZ"></a>
-                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SQ2eeoiySbx_xtFZ">==(_:_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">WebSocketFrame</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">WebSocketFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
